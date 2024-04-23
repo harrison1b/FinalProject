@@ -1,0 +1,198 @@
+body{
+  margin: 5%;
+  font-family: 'Helvetica', Times, sans-serif;
+  color:#ffffff;
+  background-color: rgb(0, 0, 0);
+}
+body {
+  background-color: black;
+  color: white; /* Change text color to white for readability */
+  font-family: sans-serif;
+  margin: 0; /* Remove default margin */
+  padding: 20px; /* Add some padding for aesthetics */
+}
+#todo-list
+{
+  color: white;
+  font-size: larger;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+form {
+  display: flex; /* Arrange form elements horizontally */
+  align-items: center; /* Align vertically */
+  margin-bottom: 20px; /* Add some space after the form */
+}
+
+#new-task {
+  padding: 5px;
+  border: 1px solid #ccc; /* Light border for input field */
+  border-radius: 4px;
+  flex: 1; /* Allow input field to grow */
+}
+
+#add-task button {
+  padding: 5px 10px;
+  border: none; /* Remove default button border */
+  border-radius: 4px;
+  cursor: pointer; /* Change cursor to pointer on hover */
+  background-color:black; /* Adjust button background color */
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  color: white; /* Change list item text color to white */
+}
+
+#added-tasks {
+  border: 2px solid #ccc; /* Add a light border to the lists */
+  border-radius: 10px; /* Rounded corners for a nicer look */
+  padding: 10px; /* Add some padding for spacing */
+}
+#calendar {
+  display: flex;
+  flex-wrap: wrap; /* Wrap days to the next line */
+}
+
+.day {
+  /* flex: 1; Make each day take up equal space --- maybe not adjusting right cjeck */
+  flex: 1 0 auto; /* Make each day take up equal space for adjust */
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 5px;
+}
+@media (prefers-reduced-motion) {
+  /* W3 IDEA  reduced motion */
+}
+@media screen and (max-width: 500px) {
+  body {
+    background-color: black;
+  }
+  h1{
+  font-family: 'Franklin Gothic Medium', sans-serif;
+  font-size: x-large;
+  text-align:center;
+  line-height: normal;
+  border: 1px solid black;
+  }
+  h2{
+  font-family: 'Franklin Gothic Medium', sans-serif;
+  font-size: large;
+  text-align:center;
+  line-height: normal;
+  border: 1px solid black;
+  }
+   image, picture, video {
+   width: 80%;
+   height: 80%;
+      }
+}
+nav {
+  box-sizing: border-box;
+  background-color: #000000;
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5px;
+  border: 2px solid #ffffff;
+  border-radius: 4px;
+  display: inline;
+  justify-content: center;
+}
+nav > ul > li {
+  display: flex inline;
+  padding: 10px;
+}
+/* idk why but without this nav below recipes clicks weird on live - maybe */
+nav {
+  display: inline;
+  justify-content: center;
+}
+
+.skip {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  color: white
+}
+  .skip:focus {
+      position: relative;
+      left: auto;
+      top: auto;
+      width: auto;
+      height: auto;
+      overflow: auto;
+      color: white
+  }
+/* tablet view */
+@media (min-width: 820px) {
+  nav {
+      box-sizing: border-box;
+      background-color: #000000;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+  }
+  nav a {
+      color: #ffffff;
+      text-decoration: none;
+      padding: 20px 30px; /* Increase the padding to make the touch targets larger */
+      border: 2px solid #ffffff;
+      border-radius: 4px;
+      margin: 0 5px;
+      font-weight: bold;
+  }
+  nav > ul > li {
+      display: inline-flex;
+      padding: 10px;
+  }
+  /* idk why but without this nav below recipes clicks weird on live - maybe */
+  nav {
+      display: flex;
+      justify-content: center;
+  }
+}
+  @media (min-width: 1370px){
+    /* looked up desktop sizing and this number came up so using that. slay. */
+    nav {
+        box-sizing: border-box;
+        background-color: #000000;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+    nav a {
+        color: #ffffff;
+        text-decoration: none;
+        padding: 20px 60px;/* Increased padding to give wider width to make use of the larger screen */
+        border: 2px solid #ffffff;
+        border-radius: 4px;
+        margin: 0 90;/* Increase the margin to make use of the larger screen */
+        font-weight: bold;
+    }
+    nav > ul > li {
+        display: inline-flex;
+        padding: 10px;
+    }
+    /* idk why but without this nav below recipes clicks weird on live - maybe */
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+  }

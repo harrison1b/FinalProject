@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a href="#main" class="skip">Skip to main content</a>
+        <nav>
+        <ul>
+            <li><a class = "active" href = "index.html">Home</a></li>
+            <li><a href = "Calendar.html">Calendar</a></li>
+            <li><a href = "todo.html">To Do</a></li>
+        </ul>
+    </nav>
+</header>
+<main id="main">
+<body>
+    <h1>A To Do List That Never Ends</h1>
+
+    <ul id="todo-list">
+    </ul>
+
+    <form id="add-task">
+        <label for="new-task">Add a new task:</label>
+        <input type="text" id="new-task" name="new-task" placeholder="Enter your task">
+        <button type="submit">Add</button>
+    </form>
+    <script src="js/todo.js"></script>
+</body>
+</html>
